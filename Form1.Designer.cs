@@ -40,10 +40,7 @@ namespace Assginment_11._3
             titleDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             yearDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             moviesBindingSource = new BindingSource(components);
-            buttonAdd = new Button();
-            buttonRemove = new Button();
             buttonSave = new Button();
-            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewGenre).BeginInit();
             ((System.ComponentModel.ISupportInitialize)genreBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMovies).BeginInit();
@@ -126,27 +123,9 @@ namespace Assginment_11._3
             moviesBindingSource.DataMember = "Movies";
             moviesBindingSource.DataSource = genreBindingSource;
             // 
-            // buttonAdd
-            // 
-            buttonAdd.Location = new Point(79, 324);
-            buttonAdd.Name = "buttonAdd";
-            buttonAdd.Size = new Size(112, 34);
-            buttonAdd.TabIndex = 2;
-            buttonAdd.Text = "Add";
-            buttonAdd.UseVisualStyleBackColor = true;
-            // 
-            // buttonRemove
-            // 
-            buttonRemove.Location = new Point(386, 324);
-            buttonRemove.Name = "buttonRemove";
-            buttonRemove.Size = new Size(112, 34);
-            buttonRemove.TabIndex = 3;
-            buttonRemove.Text = "Remove";
-            buttonRemove.UseVisualStyleBackColor = true;
-            // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(691, 324);
+            buttonSave.Location = new Point(604, 325);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(112, 34);
             buttonSave.TabIndex = 4;
@@ -154,24 +133,12 @@ namespace Assginment_11._3
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += buttonSave_Click;
             // 
-            // button4
-            // 
-            button4.Location = new Point(1049, 324);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 34);
-            button4.TabIndex = 5;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1682, 450);
-            Controls.Add(button4);
             Controls.Add(buttonSave);
-            Controls.Add(buttonRemove);
-            Controls.Add(buttonAdd);
             Controls.Add(dataGridViewMovies);
             Controls.Add(dataGridViewGenre);
             Name = "MainForm";
@@ -194,9 +161,6 @@ namespace Assginment_11._3
         private DataGridViewTextBoxColumn movieIdDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
-        private Button buttonAdd;
-        private Button buttonRemove;
         private Button buttonSave;
-        private Button button4;
     }
 }

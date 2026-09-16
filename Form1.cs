@@ -19,7 +19,7 @@ namespace Assginment_11._3
             this.dbContext = new MoviesContext();
 
             // Uncomment the line below to start fresh with a new database.
-            this.dbContext.Database.EnsureDeleted();
+            //this.dbContext.Database.EnsureDeleted();
             this.dbContext.Database.EnsureCreated();
 
             this.dbContext.Genres.Load();
